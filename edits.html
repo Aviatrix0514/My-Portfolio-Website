@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Edits</title>
+    <link rel="stylesheet" href="edits.css">
+</head>
+<body>
+    <h3 class="heading">Sample <span>Video</span> Projects</h3>
+        
+    <div class="container">
+        <div class="main-video">
+            <div class="video">
+                <video src="video 3/MARIE ALIANAH QUITORIANO_INTRO.mp4" controls autoplay poster="Images/INTRODUCE.png"></video>
+                <h3 class="title">01. Introduce Yourself in a Creative Way</h3>
+            </div>
+        </div>
+
+        <div class="video-list">
+            <div class="vid active">
+                <video src="video 3/MARIE ALIANAH QUITORIANO_INTRO.mp4" controls poster="Images/INTRODUCE.png"></video>
+                <h3 class="title">01. Introduce Yourself in a Creative Way</h3>
+            </div>
+            <div class="vid">
+                <video src="video 1/PE-Video.mp4" controls poster="Images/AEROBICS.png"></video>
+                <h3 class="title">02. PE-Aerobics Group Presentation</h3>
+            </div>
+            <div class="vid">
+                <video src="video 1/RAP BATTLE.mp4" control poster="Images/RAP.png"></video>
+                <h3 class="title">03. UTS-Rap Battle </h3>
+            </div>
+            <div class="vid">
+                <video src="video 2/STS_SEXBOMB_DANCERS.mp4" controls poster="Images/CASE.png"></video>
+                <h3 class="title">04. STS-Case Study</h3>
+            </div>
+            <div class="vid">
+                <video src="video 3/Group8-presentation.mp4" controls poster="Images/VLOG.png"></video>
+                <h3 class="title">05. UTS-Gilbert Ryle Presentation </h3>
+            </div>
+            <div class="vid">
+                <video src="video 3/CAMPAIGN.mp4" controls poster="Images/AD.png"></video>
+                <h3 class="title">06. PCM-Advocacy Campaign</h3>
+            </div>
+            <div class="vid">
+                <video src="video 3/TRAINING PROGRAM.mp4" controls poster="Images/TRAIN.png"></video>
+                <h3 class="title">07. PE-Training Program</h3>
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+        let listVideo = document.querySelectorAll('.video-list .vid');
+        let mainVideo = document.querySelector('.main-video video');
+        let title = document.querySelector('.main-video .title');
+
+        listVideo.forEach(video =>{
+            video.onclick = () =>{
+                listVideo.forEach(vid => vid.classList.remove('active'));
+                video.classList.add('active');
+                if(video.classList.contains('active')){
+                    let src = video.children[0].getAttribute('src');
+                    mainVideo.src = src;
+                    let text = video.children[1].innerHTML;
+                    title.innerHTML = text;
+                };
+                
+            };
+        });
+    </script>
+</body>
+</html>

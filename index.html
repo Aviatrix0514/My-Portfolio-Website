@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en ">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel= "stylesheet" href="style.css"> 
+    <script src="https://kit.fontawesome.com/6c5387ba89.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header"> 
+        <div class ="container">
+            <nav>
+                <a href="#header">
+                <img src="images/Alianah..png" class="logo">
+                </a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        
+
+            <div class="header-text">
+                <p>Aspiring <span class="animated-text">Web Developer</span></p>
+                <h1>Hey! I'm <span class="animated-text">Alianah</span><br>from the Philippines</h1>
+            </div>
+        </div>
+    </div>
+
+   
+
+    <!--------------about------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Bago.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p id="para">From loving airplanes to diving into IT, my journey has been a whirlwind of passion and evolving goals. 
+                        While I'm into editing, programming, and graphic design in this technology world, my passion for airplanes never fades.
+                        The precision of coding and the creativity of design resonate deeply with the intricacy I admire in airplanes.
+                        Amidst all this tech landscape, my dream to fly remains strong, reminding me where my heart truly belongs. 
+                        I'm working hard to bring together tech and flight, believing that someday my skills and dreams will come together, 
+                        taking me to new heights where innovation meets the sky</p>
+
+                       <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                       </div>
+                       <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Multimedia Editing</span><br>Editing Photos or Videos</li>
+                            <li><span>Graphic Designing</span><br>Creating and Designing Visual Contents</li>
+                            <li><span>Programming</span><br>Developing programs or Website</li>
+                        </ul>
+                       </div>
+                       <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021-Current</span><br>Learning Web Development</li>
+                            <li><span>2019-2021</span><br>Freelance Graphic Designer</li>
+                            <li><span>2017-2019</span><br>Club Assistant Multimedia Editor</li>
+                        </ul>
+                       </div>
+                       <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>College Level</span><br>BSIT - Academic Achiever</li>
+                            <li><span>Senior High School Level</span><br>STEM - Graduated With Honors</li>
+                            <li><span>Junior High School Level</span><br>Science High School Graduate with Honors</li>
+                        </ul>
+                       </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+<!---------------------services----------------------------->
+<div id ="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-pen-to-square"></i>
+                <h2>Video/Photo Edit</h2>
+                <p>Transforming your visuals is what I do best. I'll take
+                    your photos and videos to the next level, ensuring
+                    they grab attention and leave a lasting impression.
+                    Let me work my magic, giving your content that 
+                    extra wow factor you're looking for.</p>
+                    
+            </div>
+            <div>
+                <i class="fa-solid fa-pen-nib"></i>
+                <h2>Graphic Design</h2>
+                <p>My unique graphic design service brings your vision to life 
+                   with creativity and precision, creating visuals that tell your story, 
+                   captivate your audience, and make a lasting impression.
+                   <br>
+                   <br>
+                </p>
+               
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Embarking on the journey of web and program development, 
+                    I'm committed to creating digital solutions that prioritize your needs, 
+                    aiming for seamless user experiences 
+                    while eagerly expanding my expertise to better meet your goals</p>
+               
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-------------learn more-------------------->
+
+
+
+<!---------------Portfolio------------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/1.png">
+                <div class="layer">
+                    <h3>My Video Editing Projects</h3>
+                    <p>Through every cut and frame, I weave emotions into a visual symphony, 
+                        crafting unforgettable stories that linger in the soul.</p>
+                        <a href="edits.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/2.png">
+                <div class="layer">
+                    <h3>My Designs</h3>
+                    <p>Exploring the art of design, creating as I learn and grow. 
+                        Each creation a step forward on this creative journey.</p>
+                        <a href="graphics.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/3.png">
+                <div class="layer">
+                    <h3>Programming Projects</h3>
+                    <p>Venturing into coding with collaborative efforts, crafting simple projects
+                         as I journey through the learning curve, step by step.</p>
+                        <a href="programs.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="parody.html" class="btn">See more</a>
+    </div>
+</div>
+
+<!-----------------------Contact---------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-address-book"></i> quitorianoalianah@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 09566184971</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/mariealianah.quitoriano.3"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/papsyyclee/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="images/Marie Alianah Quitoriano.pdf" download class="btn btn2">Download Resume</a>
+            </div>   
+            <div class="contact-right">  
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>     
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Alianah. Made with <i class="fa-solid fa-heart"></i> by yours truly</p>
+    </div>
+</div>
+
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwzmF0L4bmB1lf_zrXkmdRkis8hJLC-pQjiD_4h2wwsXcroTXPiPpAg6lOfFqWayI_z/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+    
+
+</body>
+</html>
